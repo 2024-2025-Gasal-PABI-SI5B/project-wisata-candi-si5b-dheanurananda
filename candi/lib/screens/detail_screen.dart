@@ -173,7 +173,10 @@ class DetailScreen extends StatelessWidget {
                   Divider(
                     color: Colors.deepPurple.shade100,
                   ),
-                  Text(
+                  const SizedBox(
+                    height: 16,
+                  ),
+                  const Text(
                     'Galeri',
                     style: TextStyle(
                       fontSize: 16,
@@ -187,7 +190,10 @@ class DetailScreen extends StatelessWidget {
                   const SizedBox(
                     height: 4,
                   ),
-                  Text(''),
+                  const Text(
+                    'Tap untuk memperbesar',
+                    style: TextStyle(fontSize: 12, color: Colors.black54),
+                  ),
                 ],
               ),
             )

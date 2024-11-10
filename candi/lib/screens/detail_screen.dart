@@ -41,6 +41,18 @@ class DetailScreen extends StatelessWidget {
                   ),
                 )),
           ],
+        ),
+        //detail info
+        //info atas
+        Padding(
+          padding: EdgeInsets.symmetric(horizontal: 16),
+          child: Column(
+            children: [
+              //info atas
+              //info tengah
+              //info bawah
+            ],
+          ),
         )
       ],
     ));

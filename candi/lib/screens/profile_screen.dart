@@ -8,8 +8,8 @@ class ProfileScreen extends StatefulWidget {
 class _ProfileScreenState extends State<ProfileScreen> {
   // TODO: 1 Deklarasikan variabel yang dibutuhkan
   bool isSignedIn = true;
-  String fulName = '';
-  String userName = '';
+  String fulName = 'Dhea Nur Ananda';
+  String userName = 'ananda';
   int favoriteCandiCount = 0;
 
   @override
@@ -57,8 +57,47 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       ],
                     ),
                   ),
-                )
+                ),
                 //TODO  3 Buat bagianprofile info (isinya info profile)
+                //baris 1 profile info
+                const SizedBox(
+                  height: 20,
+                ),
+                Divider(
+                  color: Colors.deepPurple[100],
+                ),
+                const SizedBox(
+                  height: 4,
+                ),
+                Row(
+                  children: [
+                    SizedBox(
+                      width: MediaQuery.of(context).size.width / 3,
+                      child: const Row(
+                        children: [
+                          Icon(
+                            Icons.lock,
+                            color: Colors.amber,
+                          ),
+                          const SizedBox(
+                            width: 8,
+                          ),
+                          Text(
+                            'Pengguna',
+                            style: TextStyle(
+                                fontSize: 18, fontWeight: FontWeight.bold),
+                          ),
+                          Expanded(
+                              child: Text(
+                            ': $fulName',
+                            style: TextStyle(fontSize: 18),
+                          )),
+                        ],
+                      ),
+                      //baris 2 nama
+                      
+                  ],
+                ),
                 //TODO: 4 Buat bagian profile action (tombol signin/sigout)
               ],
             ),

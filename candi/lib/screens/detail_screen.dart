@@ -163,6 +163,33 @@ class DetailScreen extends StatelessWidget {
                   )
                 ],
               ),
+            ),
+            //detail galery
+            Padding(
+              padding: const EdgeInsets.all(15),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Divider(
+                    color: Colors.deepPurple.shade100,
+                  ),
+                  Text(
+                    'Galeri',
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  SizedBox(),
+                  const SizedBox(
+                    height: 4,
+                  ),
+                  Text(''),
+                ],
+              ),
             )
           ],
         ),

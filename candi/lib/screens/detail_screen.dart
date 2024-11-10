@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:wisata_candi/models/candi.dart';
 
@@ -185,6 +186,26 @@ class DetailScreen extends StatelessWidget {
                   ),
                   const SizedBox(
                     height: 10,
+                  ),
+                  SizedBox(
+                    height: 100,
+                    child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      itemCount: candi.imageUrls.length,
+                      itemBuilder: (context, index) {
+                        return Padding(
+                          padding: const EdgeInsets.only(right: 8),
+                          child: GestureDetector(
+                            onTap: () {},
+                            child: Container(
+                              decoration: BoxDecoration(),
+                              child: CachedNetworkImage(
+                                  imageUrl: candi.imageUrls[index]),
+                            ),
+                          ),
+                        );
+                      },
+                    ),
                   ),
                   SizedBox(),
                   const SizedBox(
